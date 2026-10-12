@@ -6,7 +6,7 @@
   
   <!-- SEO Мета-теги -->
   <title>Скрипты и 3D Модели для Базис-Мебельщик | Готовые решения для конструкторов</title>
-  <meta name="description" content="Готовые скрипты автоматизации и 3D-модели фурнитуры для Базис-Мебельщик. Ускорение проектирования мебели, расстановка размеров, базы техники и розеток.">
+  <meta name="description" content="Готовые скрипты автоматизации и 3D-модели фурнитуры для Базис-Мебельщик. Быстрая простановка размеров, параметрические шкафы, базы техники и розеток.">
   <meta name="keywords" content="Базис-Мебельщик, скрипты базис, быстрые размеры, быстрый шкаф, 3d модели фурнитуры, фрагменты базис">
   <meta name="robots" content="index, follow">
 
@@ -64,14 +64,14 @@
 
     /* Главный экран */
     .hero {
-      padding: 80px 0 60px;
+      padding: 70px 0 50px;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 40px;
-      line-height: 1.2;
-      margin-bottom: 20px;
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 18px;
       color: #fff;
     }
 
@@ -102,43 +102,58 @@
 
     /* Сетка каталога */
     .section-title {
-      font-size: 28px;
-      margin: 60px 0 30px;
-      text-align: center;
+      font-size: 26px;
+      margin: 50px 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 24px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 24px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .card:hover {
       transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     }
 
-    .card h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
+    /* Фотография товара */
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
       color: #fff;
     }
 
-    .card p {
+    .card-desc {
       font-size: 14px;
       color: var(--text-muted);
       margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     .card-bottom {
@@ -146,7 +161,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: auto;
-      padding-top: 16px;
+      padding-top: 14px;
       border-top: 1px solid var(--border);
     }
 
@@ -164,6 +179,11 @@
       border-radius: 8px;
       font-size: 14px;
       font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn-buy:hover {
+      background: var(--accent-hover);
     }
 
     /* Подвал */
@@ -173,6 +193,7 @@
       text-align: center;
       color: var(--text-muted);
       font-size: 14px;
+      margin-top: 40px;
     }
 
     footer a {
@@ -197,76 +218,118 @@
       <a href="https://t.me/promebelpro100" target="_blank" class="btn-main">Открыть каталог в Telegram</a>
     </section>
 
-    <!-- Раздел: Скрипты -->
+    <!-- 1. Раздел: Скрипты -->
     <h2 class="section-title">📜 Скрипты автоматизации</h2>
     <div class="grid">
       <div class="card">
         <div>
-          <h3>Комплект: Быстрые размеры</h3>
-          <p>Мгновенная полуавтоматическая простановка габаритных и внутренних размеров на чертежах и моделях.</p>
+          <img src="https://yanartemjew-ui.github.io/shop/script1.jpg" alt="Скрипт-Быстрые размеры" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Скрипт-Быстрые размеры</div>
+          <div class="card-desc">Быстрая простановка габаритных и внутренних размеров на чертежах и моделях.</div>
         </div>
         <div class="card-bottom">
           <div class="price">600 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
         </div>
       </div>
 
       <div class="card">
         <div>
-          <h3>Скрипт: Быстрый шкаф</h3>
-          <p>Параметрическое построение шкафов-купе и корпусных шкафов с автоматическим расчетом полок и перегородок.</p>
+          <img src="https://yanartemjew-ui.github.io/shop/script2.jpg" alt="Скрипт: Быстрый шкаф" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Скрипт: Быстрый шкаф</div>
+          <div class="card-desc">Быстрое построение шкафов-купе, корпусных шкафов с автоматическим расчетом полок и перегородок.</div>
         </div>
         <div class="card-bottom">
           <div class="price">1 400 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
         </div>
       </div>
 
       <div class="card">
         <div>
-          <h3>Скрипт: Текст со стрелкой</h3>
-          <p>Быстрое добавление выносных линий, пометок и технологических указателей на чертежи.</p>
+          <img src="https://yanartemjew-ui.github.io/shop/script3.jpg" alt="Скрипт: Текст со стрелкой" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Скрипт: Текст со стрелкой</div>
+          <div class="card-desc">Добавление выносных линий, пометок и технологических указателей на чертежи.</div>
         </div>
         <div class="card-bottom">
           <div class="price">400 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
         </div>
       </div>
     </div>
 
-    <!-- Раздел: 3D Модели -->
+    <!-- 2. Раздел: 3D Модели -->
     <h2 class="section-title">🛋 Готовые 3D Модели и Базы</h2>
     <div class="grid">
       <div class="card">
         <div>
-          <h3>Комплект кухонной техники</h3>
-          <p>Полный набор встраиваемой техники для кухни: поверхности, духовки, СВЧ и кофемашины с вырезами.</p>
+          <img src="https://yanartemjew-ui.github.io/shop/model5.jpeg" alt="Комплект кухонной техники" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Комплект кухонной техники</div>
+          <div class="card-desc">Полный набор встраиваемой техники для кухни: варочные поверхности, духовки, СВЧ и кофемашины.</div>
         </div>
         <div class="card-bottom">
           <div class="price">2 200 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
         </div>
       </div>
 
       <div class="card">
         <div>
-          <h3>Розетки и выключатели</h3>
-          <p>Фрагменты для точной разметки электрики на стенах и кухонном фартуке прямо в проекте.</p>
-        </div>
-        <div class="card-bottom">
-          <div class="price">350 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div>
-          <h3>Варочные поверхности</h3>
-          <p>База индукционных и газовых варочных панелей с правильными посадочными размерами.</p>
+          <img src="https://yanartemjew-ui.github.io/shop/model1.jpeg" alt="Варочные поверхности" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Варочные поверхности</div>
+          <div class="card-desc">Комплекты электрических и газовых варочных панелей.</div>
         </div>
         <div class="card-bottom">
           <div class="price">600 ₽</div>
-          <a href="https://t.me/promebelpro100" target="_blank" class="btn-buy">Заказать</a>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://yanartemjew-ui.github.io/shop/model2.jpeg" alt="Духовые шкафы" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Духовые шкафы</div>
+          <div class="card-desc">База фрагментов с открыванием и анимацией для кухонных гарнитуров.</div>
+        </div>
+        <div class="card-bottom">
+          <div class="price">700 ₽</div>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://yanartemjew-ui.github.io/shop/model3.jpeg" alt="Кофемашины встраиваемые" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Кофемашины встраиваемые</div>
+          <div class="card-desc">Точные габариты и посадочные вырезы под встраивание в пеналы.</div>
+        </div>
+        <div class="card-bottom">
+          <div class="price">400 ₽</div>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://yanartemjew-ui.github.io/shop/model4.jpeg" alt="СВЧ печи" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">СВЧ печи</div>
+          <div class="card-desc">Встраиваемые микроволновые печи для верхних модулей и колонн.</div>
+        </div>
+        <div class="card-bottom">
+          <div class="price">600 ₽</div>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="https://yanartemjew-ui.github.io/shop/model6.jpeg" alt="Розетки и выключатели" class="card-img" onerror="this.style.display='none'">
+          <div class="card-title">Розетки и выключатели</div>
+          <div class="card-desc">Фрагменты для точной разметки электрики на стенах и фартуке прямо в проекте.</div>
+        </div>
+        <div class="card-bottom">
+          <div class="price">350 ₽</div>
+          <a href="https://t.me/Tvorchectvomebel" target="_blank" class="btn-buy">Заказать</a>
         </div>
       </div>
     </div>
